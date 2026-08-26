@@ -67,7 +67,7 @@ public class Baseclass
 		d = new dashboard(w);
 		ch = new checkoutpage(w);	
 		l = new loginpage(w);
-		dsfsfsf;
+	
 	}
 	
 	@DataProvider(name = "mydata")
