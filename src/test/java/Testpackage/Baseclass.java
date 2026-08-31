@@ -38,7 +38,7 @@ import Pages.loginpage;
 
 public class Baseclass 
 {
-	public WebDriver w ; //instance / global
+	public WebDriver w ; //instance / global  /// A
 	dashboard d;
 	checkoutpage ch;
 	loginpage l;
@@ -51,6 +51,8 @@ public class Baseclass
 		p.load(fis);
 		String browsername =p.getProperty("browser");
 		String env= p.getProperty("env");
+		
+		System.out.println("i am doin my own");
 		
 		if(env.equalsIgnoreCase("remote"))
 		{
