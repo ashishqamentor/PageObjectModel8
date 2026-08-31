@@ -38,7 +38,11 @@ import Pages.loginpage;
 
 public class Baseclass 
 {
+<<<<<<< HEAD
 	public WebDriver w ; //instance / global  /// A
+=======
+	public WebDriver w ; //instance / global  // B
+>>>>>>> f76f3ced38ff9cae518ca7d6ea0e2e67461b1f52
 	dashboard d;
 	checkoutpage ch;
 	loginpage l;
@@ -52,7 +56,11 @@ public class Baseclass
 		String browsername =p.getProperty("browser");
 		String env= p.getProperty("env");
 		
+
 		System.out.println("i am doin my own");
+
+		System.out.println("person b changes");  // person B - just to test 
+
 		
 		if(env.equalsIgnoreCase("remote"))
 		{
