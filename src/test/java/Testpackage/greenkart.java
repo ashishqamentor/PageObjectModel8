@@ -25,7 +25,7 @@ import Pages.dashboard;
 public class greenkart extends Baseclass
 {
 	@Parameters({"promo","country"})
-	@Test(enabled = false, retryAnalyzer = retry.class)
+	@Test( retryAnalyzer = retry.class)
 	public void greenkartTest(String promocode, String country) throws Exception
 	{
 		//site launch

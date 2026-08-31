@@ -3,6 +3,7 @@ package Testpackage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -11,6 +12,7 @@ import java.util.Properties;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -46,20 +49,49 @@ public class Baseclass
 		FileInputStream fis = new FileInputStream("./data/config.properties");
 		Properties p = new Properties();
 		p.load(fis);
-		String browsername =p.getProperty("browser");		
-		if(browsername.equalsIgnoreCase("chrome"))
-		{
-			ChromeOptions op = new ChromeOptions();
-			op.addArguments("--incognito");
-			w= new ChromeDriver(op);
-		}
-		if(browsername.equalsIgnoreCase("edge"))
-		{
-			EdgeOptions op = new EdgeOptions();
-			op.addArguments("inprivate");
-			w= new EdgeDriver(op);
+		String browsername =p.getProperty("browser");
+		String env= p.getProperty("env");
 		
-		}		
+		if(env.equalsIgnoreCase("remote"))
+		{
+			URL url = new URL("http://192.168.1.104:4444/wd/hub");
+			
+			if(browsername.equalsIgnoreCase("chrome"))
+			{
+				ChromeOptions op = new ChromeOptions();
+				op.addArguments("--incognito");
+				op.setCapability("browserName", browsername);
+				w= new RemoteWebDriver(url, op);
+			}
+			
+			if(browsername.equalsIgnoreCase("MicrosoftEdge"))
+			{
+				EdgeOptions op = new EdgeOptions();
+				op.addArguments("inprivate");
+				op.setCapability("browserName", browsername);
+				w= new RemoteWebDriver(url, op);
+			}
+			
+			
+		}
+		else
+		{
+			
+			if(browsername.equalsIgnoreCase("chrome"))
+			{
+				ChromeOptions op = new ChromeOptions();
+				op.addArguments("--incognito");
+				w= new ChromeDriver(op);
+			}
+			if(browsername.equalsIgnoreCase("MicrosoftEdge"))
+			{
+				EdgeOptions op = new EdgeOptions();
+				op.addArguments("inprivate");
+				w= new EdgeDriver(op);
+			
+			}				
+		}
+			
 		w.manage().window().maximize();
 		w.manage().deleteAllCookies();
 		w.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
