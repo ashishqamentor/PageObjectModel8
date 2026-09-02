@@ -50,8 +50,7 @@ public class Baseclass
 		Properties p = new Properties();
 		p.load(fis);
 		String browsername =p.getProperty("browser");
-		String env= p.getProperty("env");
-		
+		String env= p.getProperty("env");		
 
 		System.out.println("i am doin my own");
 
