@@ -52,9 +52,12 @@ public class Baseclass
 		String browsername =p.getProperty("browser");
 
 		String env= p.getProperty("env");
+
 		System.out.println("i am doin my own");
 		System.out.println("person b changes");  // person B - just to test 
 		System.out.println("pushing code to test1");
+		System.out.println("doing checnges in test2");
+
 		
 		if(env.equalsIgnoreCase("remote"))
 		{
