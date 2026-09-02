@@ -57,7 +57,8 @@ public class Baseclass
 		System.out.println("person b changes");  // person B - just to test 
 		System.out.println("pushing code to test1");
 		System.out.println("doing checnges in test2");
-
+		
+		System.out.println("testing fecth");
 		
 		if(env.equalsIgnoreCase("remote"))
 		{
@@ -77,9 +78,7 @@ public class Baseclass
 				op.addArguments("inprivate");
 				op.setCapability("browserName", browsername);
 				w= new RemoteWebDriver(url, op);
-			}
-			
-			
+			}			
 		}
 		else
 		{
