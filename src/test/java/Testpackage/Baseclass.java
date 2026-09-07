@@ -58,8 +58,7 @@ public class Baseclass
 		System.out.println("pushing code to test1");
 		System.out.println("doing checnges in test2");
 		
-		System.out.println("testing fecth");
-		
+				
 		if(env.equalsIgnoreCase("remote"))
 		{
 			URL url = new URL("http://192.168.1.104:4444/wd/hub");

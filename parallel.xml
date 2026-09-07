@@ -9,13 +9,13 @@
 	<parameter name="promo" value="Qacoaching"></parameter>
 	<parameter name="country" value="India"></parameter>
 
-	<test thread-count="5" name="greenkart">
+	<test  name="greenkart">
 		<classes>
 			<class name="Testpackage.greenkart" />
 		</classes>
 	</test> <!-- Test -->
 
-	<test thread-count="5" name="logintest">
+	<test name="logintest">
 		<classes>
 			<class name="Testpackage.logintest" />
 		</classes>
