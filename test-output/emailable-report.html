@@ -9,37 +9,28 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">greenkart</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,494</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">logintest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">28,410</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">49,904</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,412</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">greenkart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Testpackage.greenkart</td><td><a href="#m0">greenkartTest</a></td><td rowspan="1">1788802090369</td><td rowspan="1">17573</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">logintest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Testpackage.logintest</td><td><a href="#m1">login</a></td><td rowspan="2">1788802099624</td><td rowspan="2">2572</td></tr><tr class="failedeven"><td><a href="#m2">login</a></td></tr><tr><th colspan="4">logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Testpackage.logintest</td><td><a href="#m3">login</a></td><td rowspan="4">1788802102398</td><td rowspan="4">7623</td></tr><tr class="passedeven"><td><a href="#m4">login</a></td></tr><tr class="passedeven"><td><a href="#m5">login</a></td></tr><tr class="passedeven"><td><a href="#m6">login</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">greenkartstepdefination.geenkartrunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1789147649312</td><td rowspan="1">16530</td></tr></tbody>
 </table>
-<h2>greenkart</h2><h3 id="m0">Testpackage.greenkart#greenkartTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Qacoaching</td><td>India</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>logintest</h2><h3 id="m1">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce123</td><td>https://www.saucedemo.com/inventory.html</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
-	at Pages.loginpage.dologin(loginpage.java:35)
-	at Testpackage.logintest.login(logintest.java:24)
+<h2>Test</h2><h3 id="m0">greenkartstepdefination.geenkartrunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;To verify checkout journey of greenkart site.&quot;</td><td>&quot;Greenkart site.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.core.exception.CucumberException: Step [do checkout journey] is defined with 2 parameters at &apos;greenkartstepdefination.greenkartstepdef.do_checkout_journey(java.lang.String,java.lang.String)&apos;.
+However, the gherkin step has 0 arguments.
+Step text: do checkout journey
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:82)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:55)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:87)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td><td>https://www.saucedemo.com/inventory.html</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
-	at Pages.loginpage.dologin(loginpage.java:35)
-	at Testpackage.logintest.login(logintest.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td><td>https://www.saucedemo.com/inventory.html</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td><td>https://www.saucedemo.com/inventory.html</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td><td>https://www.saucedemo.com/inventory.html</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Testpackage.logintest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>error_user</td><td>secret_sauce</td><td>https://www.saucedemo.com/inventory.html</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

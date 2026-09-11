@@ -39,8 +39,8 @@ import Pages.loginpage;
 public class Baseclass 
 {
 	public WebDriver w ; //instance / global  /// A
-	dashboard d;
-	checkoutpage ch;
+	public dashboard d;
+	public checkoutpage ch;
 	loginpage l;
 		
 	@BeforeTest
@@ -52,13 +52,7 @@ public class Baseclass
 		String browsername =p.getProperty("browser");
 
 		String env= p.getProperty("env");
-
-		System.out.println("i am doin my own");
-		System.out.println("person b changes");  // person B - just to test 
-		System.out.println("pushing code to test1");
-		System.out.println("doing checnges in test2");
 		
-				
 		if(env.equalsIgnoreCase("remote"))
 		{
 			URL url = new URL("http://192.168.1.104:4444/wd/hub");
