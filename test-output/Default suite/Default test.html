@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 11 22:49:25 IST 2026</td>
+<td>Started on:</td><td>Wed Sep 16 22:48:31 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19845 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22391 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at loginstepdefination.loginstepdef.dashboard(loginstepdef.java:60)
+	at ✽.I should see dashboard page with url &quot;https://www.saucedemo.com/inventory.html&quot;(file:///C:/Users/koush/eclipse-workspace/PageObjectModel8/src/test/java/featurefiles/login.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1457499015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457499015'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at loginstepdefination.loginstepdef.dashboard(loginstepdef.java:60)
+	at ✽.I should see dashboard page with url &quot;https://www.saucedemo.com/inventory.html&quot;(file:///C:/Users/koush/eclipse-workspace/PageObjectModel8/src/test/java/featurefiles/login.feature:7)
+</pre></div></td>
+<td>1</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +103,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='greenkartstepdefination.geenkartrunner.runScenario()'><b>runScenario</b><br>Test class: greenkartstepdefination.geenkartrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify checkout journey of greenkart site.", "Greenkart site."</td>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
 <td></td>
-<td>18</td>
-<td>greenkartstepdefination.geenkartrunner@5965d37</td></tr>
+<td>2</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td></td>
+<td>3</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td></td>
+<td>7</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td></td>
+<td>2</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td></td>
+<td>2</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
+<tr>
+<td title='loginstepdefination.loginrunner.runScenario()'><b>runScenario</b><br>Test class: loginstepdefination.loginrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login validation", "Login sause Labs."</td>
+<td></td>
+<td>2</td>
+<td>loginstepdefination.loginrunner@5965d37</td></tr>
 </table><p>
 </body>
 </html>

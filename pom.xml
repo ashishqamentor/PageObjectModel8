@@ -135,6 +135,47 @@
 			</build>
 		</profile>
 
+		<profile>
+			<id>loginBDD</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>loginBDD.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
+
+		<profile>
+			<id>geenkartBDD</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>geenkartBDD.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
 
 	</profiles>
 
